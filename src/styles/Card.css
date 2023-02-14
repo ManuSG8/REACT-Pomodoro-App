@@ -1,0 +1,28 @@
+.minutes, .seconds {
+  background-color: red;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 7rem;
+  color: #EFEFEF;
+  border-radius: 20px;
+}
+
+
+.minutes {
+  background: linear-gradient(to bottom, #ff4d4d, #b30000);
+}
+
+.seconds {
+  background: linear-gradient(to bottom, #666, #333);
+}
+
+@media screen and (max-width:500px) {
+  .minutes, .seconds {
+    width: 150px;
+    height: 150px;
+    font-size: 5rem;
+  }
+}

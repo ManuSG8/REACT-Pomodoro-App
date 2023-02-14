@@ -1,0 +1,81 @@
+.App {
+  width: 95vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.counter {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  gap: 5rem;
+}
+
+.start {
+  border: none;
+  padding: 1rem 2rem;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+  background-color: rgba(6, 179, 6, 0.767);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.stop {
+  border: none;
+  padding: 1rem 2rem;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+  background-color: rgba(231, 5, 5, 0.856);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.reset {
+  border: none;
+  padding: 1rem 2rem;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+  background-color: rgba(211, 211, 20, 0.849);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+img {
+  height: 20px;
+}
+
+.start:hover {
+  background-color: rgb(6, 179, 6);
+}
+
+.stop:hover {
+  background-color: rgb(231, 5, 5);
+}
+
+.reset:hover {
+  background-color: rgb(211, 211, 20);
+}
+
+@media screen and (max-width:500px) {
+  .buttons {
+    gap: 2rem;
+  }
+
+  .stop, .start, .reset {
+    padding: 0.8rem 1.6rem;
+    font-size: 1.1rem;
+  }
+}
