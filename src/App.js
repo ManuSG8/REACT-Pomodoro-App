@@ -2,7 +2,6 @@ import './App.css';
 import React, { useState, useEffect } from 'react'
 import Card from './components/Card'
 import Button from './components/Button'
-import beep from './assets/beep.mp3'
 import resetLogo from './assets/reset.svg'
 
 function App() {
@@ -12,8 +11,6 @@ function App() {
   const [minutes, setMinutes] = useState(25)
 
   const [intervalId, setIntervalId] = useState(null)
-
-  const audio = new Audio(beep)
 
   const start = () => {
     if(intervalId === null) {
@@ -43,8 +40,8 @@ function App() {
     }
 
     if(minutes === 0 && seconds === 0) clearInterval(intervalId) 
-    
-  }, [seconds, intervalId, minutes, audio])
+
+  }, [seconds, intervalId, minutes])
 
   return (
     <>
